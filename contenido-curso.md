@@ -10,7 +10,9 @@ El objetivo del curso es concienciar al estudiante sobre la metodología
 abierta en la ciencia y cómo puede beneficiar a su carrera
 proporcionando visibilidad y colaboraciones espontáneas.
 
-## Día 1:
+Las clases tendrán lugar en el aula 0.4 de la [ETSIIT](https://etsiit.ugr.es)
+
+## Día 19 de octubre:
 
 * Software libre y datos y conocimiento abierto. Hacia la ciencia abierta
 
@@ -21,7 +23,7 @@ universidad y biblioteca. Qué liberar y cómo hacerlo.
 
 * Datos abiertos: uso de los mismos, licencias, datos abiertos en la UGR.
 
-## Día 2:
+## Día 20 de octubre:
 
 * Git y Github, claves para el desarrollo en abierto.
 

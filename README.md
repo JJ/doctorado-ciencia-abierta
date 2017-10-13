@@ -4,5 +4,5 @@ Material para el [curso de formación de la Escuela de Posgrado de la UGR sobre 
 
 * [Objetivos del curso](OBJETIVOS.md)
 * [Justificación del mismo](JUSTIFICACION.md)
-* [Contenidos del curso](contenido-curso.md)
+* [Contenidos del curso y calendario](contenido-curso.md)
 
