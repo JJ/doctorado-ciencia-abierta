@@ -12,7 +12,7 @@ proporcionando visibilidad y colaboraciones espontáneas.
 
 Las clases tendrán lugar en el aula 0.4 de la [ETSIIT](https://etsiit.ugr.es)
 
-## Día 19 de octubre: Manuel Cogolludo
+## Día 19 de octubre: Manu Cogolludo
 
 * Software libre y datos y conocimiento abierto. Hacia la ciencia abierta
 
