@@ -1,0 +1,5 @@
+# Justificación académica
+
+Trabajar con una metodología de ciencia abierta no sólo permite cumplir una obligación ética de mantener a la sociedad informada de los desarrollos que se hacen con fondos públicos, también lleva a una serie de buenas prácticas que resultan en flujos de trabajo más eficientes que permiten que el camino de idea a publicación sea mucho mápido. Al usar también una serie de herramientas que permiten publicar todo tipo de "artefactos", desde código a gráficos pasando por comentarios a experimentos fallidos, crean una práctica de comunicación que se acerca más a la divulgación, pero que a la vez permite crear trabajos con revisión entre pares más fáciles de revisar y que, eventualmente cuando se publican, recibirán más atención y más citas al estar en abierto.
+
+Este curso introduce metodología, prácticas habituales y recursos usados en ciencia abierta, con el objetivo esencial de ayudar al estudiante a acercar la práctica a la sociedad y también mejorar sus propias prácticas de experimentación y de publicación de esos experimentos.
