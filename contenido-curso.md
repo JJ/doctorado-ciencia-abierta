@@ -12,7 +12,7 @@ proporcionando visibilidad y colaboraciones espontáneas.
 
 Las clases tendrán lugar en el aula 0.4 de la [ETSIIT](https://etsiit.ugr.es)
 
-## Día 19 de octubre:
+## Día 19 de octubre: Manuel Cogolludo
 
 * Software libre y datos y conocimiento abierto. Hacia la ciencia abierta
 
@@ -23,14 +23,14 @@ universidad y biblioteca. Qué liberar y cómo hacerlo.
 
 * Datos abiertos: uso de los mismos, licencias, datos abiertos en la UGR.
 
-## Día 20 de octubre:
+## Día 20 de octubre: Germán Martínez
 
 * Git y Github, claves para el desarrollo en abierto.
 
 * El estado mental correcto. Por qué usar git y GitHub. Flujos de trabajo
 básicos. Colaboración a través de repositorios de código.
 
-## Día 3:
+## Día por determinar: JJ Merelo
 
 * Más allá del trabajo científico: ciencia de bitácora abierta
 
@@ -38,7 +38,7 @@ básicos. Colaboración a través de repositorios de código.
 datos y presentación gráfica incluida. Rmarkdown. Knitr. Jupyter
 notebooks.
 
-## Día 4:
+## Día por determinar: JJ Merelo
 
 * Ciencia reproducible: buenas prácticas en el procesamiento de datos
 científicos
@@ -47,7 +47,7 @@ científicos
 los mismos. Creación de entornos de procesamiento de datos y
 experimentales reproducibles.
 
-## Día 5:
+## Día por determinar: JJ Merelo
 
 * Publicación en abierto: posibilidades y retorno.
 
