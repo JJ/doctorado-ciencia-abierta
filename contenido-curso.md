@@ -68,5 +68,5 @@ la Oficina de Software Libre
 Germán Martínez Maldonado es técnico en la Oficina de Software Libre,
 graduado en Ingeniería Informática y experto DevOps.
 
-Manuel Cogolludo Vallejo es experto en software libre y ha trabajado
+Manu Cogolludo Vallejo es experto en software libre y ha trabajado
 como técnico en la Oficina de Software Libre.
