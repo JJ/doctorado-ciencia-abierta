@@ -30,8 +30,9 @@ universidad y biblioteca. Qué liberar y cómo hacerlo.
 * El estado mental correcto. Por qué usar git y GitHub. Flujos de trabajo
 básicos. Colaboración a través de repositorios de código.
 
-## Día por determinar: JJ Merelo
+## Días 6 y 7 de octubre: JJ Merelo
 
+* Día 6 de octubre, 5 de la tarde, 7 de octubre, 5:30 de la tarde.
 * Más allá del trabajo científico: ciencia de bitácora abierta
 
 * Más allá del PDF, elaboración de publicaciones con procesamiento de
