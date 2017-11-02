@@ -32,14 +32,13 @@ básicos. Colaboración a través de repositorios de código.
 
 ## Días 6 y 7 de octubre: JJ Merelo
 
-* Día 6 de octubre, 5 de la tarde, 7 de octubre, 5:30 de la tarde.
+Día 6 de octubre, 5 de la tarde, 7 de octubre, 5:30 de la tarde. Contenido:
+
 * Más allá del trabajo científico: ciencia de bitácora abierta
 
 * Más allá del PDF, elaboración de publicaciones con procesamiento de
 datos y presentación gráfica incluida. Rmarkdown. Knitr. Jupyter
 notebooks.
-
-## Día por determinar: JJ Merelo
 
 * Ciencia reproducible: buenas prácticas en el procesamiento de datos
 científicos
@@ -47,8 +46,6 @@ científicos
 * Buenas prácticas en el procesamiento de datos: publicación en abierto de
 los mismos. Creación de entornos de procesamiento de datos y
 experimentales reproducibles.
-
-## Día por determinar: JJ Merelo
 
 * Publicación en abierto: posibilidades y retorno.
 
