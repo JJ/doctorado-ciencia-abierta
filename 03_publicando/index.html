@@ -32,36 +32,52 @@
 
 
 	<section><h1>Bitácora abierta</h1>
-	  <h2>Mantener un diario de los resultados y fracasos</h2></section>
+	  <h2>Mantener un diario de los resultados y fracasos</h2>
+	</section>
+
+	<section><h1>Ejercicio</h1>
+	  <ul><li>Contar en una frase un proyecto</li>
+	    <li>Organizarse en equipos</li>
+	    <li>Crear un proyecto y añadir al resto del equipo</li>
+	  </ul>
+	</section>
+
+	<!-- Organizando la bitácora y el trabajo -->
+	<section>
+	  <section><h1>Haciendo la bitácora</h1>
+	    <h2>Usando fichero <code>ChangeLog</code> + editor</h2>
+
+	    <aside class='notes'>Estés o no trabajando con algún lenguaje de programación o proyecto, es importante <a href='http://keepachangelog.com/en/1.0.0/'>manener un log de cambios o bitácora</a></aside>
+	</section>
       </div>
     </div>
 
-	  <script src="lib/js/head.min.js"></script>
-	  <script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-			// Display a presentation progress bar
-			progress: true,
-			
-			// Display the page number of the current slide
-			slideNumber: true,
-			
-			// Push each slide change to the browser history
-			history: true,
-			
-			// Enable keyboard shortcuts for navigation
-			keyboard: true,
-			width: "90%",
-			dependencies: [
-			{ src: 'plugin/markdown/marked.js' },
-			{ src: 'plugin/markdown/markdown.js' },
-			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-			]
-			});
-		</script>
-	</body>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      // Display a presentation progress bar
+      progress: true,
+      
+      // Display the page number of the current slide
+      slideNumber: true,
+      
+      // Push each slide change to the browser history
+      history: true,
+      
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+      width: "90%",
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
+  </body>
 </html>
