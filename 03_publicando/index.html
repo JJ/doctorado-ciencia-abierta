@@ -62,6 +62,7 @@
 	  <section><h1>El trabajo se organiza en tareas</h1>
 	    <h2 class='fragment'>Los commits siempre mencionan una tarea</h2>
 	    <pre class='fragment'><code>git commit -am "Revisa abstract refs #2"</code></pre>
+	    <aside class='notes>En principio, un issue lo puede asignar quien quiera. También se lo puede uno auto-asignar.</aside>
 	  </section>
 
 	  <section><h1>Los issues se deben asignar a alguien</h1>
@@ -75,11 +76,20 @@
 	  <section><h1>Issues (y commits) usan markdown</h1>
 	    <h2 class='fragment'>Usarlo para enlaces o nombres de ficheros, por ejemplo</h2>
 	  </section>
+
+	  <section><h1>Issues se cierran desde un commit</h1>
+	    <h2>Tarea terminada:</h2>
+	    <pre><code>git commit -am "Revisada intro closes #3"</code>
+	    </pre>
+	    <aside class='notes'>Closes, o fixes, o solves, porque se refiere a "bugs"</aside>
+	  </section>
 	  
 	  <section><h1>Ejercicio</h1>
 	    <h2>Comenzar con la organización del proyecto usando GitHub, bitácora</h2>
 	    <h3 class='fragment'>Obtener datos y añadirlos al repo, por ejemplo</h3>
 	  </section>
+
+	  
 	</section>
       </div>
     </div>
