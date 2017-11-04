@@ -147,11 +147,33 @@
 	  </section>
 
 	  <section><h1>Leyendo datos</h1>
-	    <pre><code># Lee datos extraídos de la Wikipedia española
-data.2016 &lt;- read.csv("../data/Cataluña-2016.dat")
-data.2017 &lt;- read.csv("../data/Cataluña-2017.dat")
-	    </code></pre>
+	    <pre><code># Visitas extraídos de la Wikipedia española via API
+data.2016 <- read.table("data/Cataluña-2016.dat")
+data.2017 <- read.table("data/Cataluña-2017.dat")
+	     </code></pre>
+	    <h2 class='fragment'><em>Run</em> o copiar en consola</h2>
 	  </section>
+
+	  
+	  <section><h1>Escribiendo la historia</h1>
+	    <h2>Datos → <code>.Rdata</code></h2>
+	    <h2>Historia → <code>.Rhistory</code></h2>
+	    <code class='fragment'><pre>git add .R*</pre></code>
+	    <aside class='notes'>De esta forma puedes tener el mismo entorno trabajes donde trabajes y recordar las órdenes que has ejecutado, incluso aunque no las hayas registrado en un programa</aside></section>
+	  <section><h1>Procesa datos → Fichero bajo git</h1>
+	    <pre><code>git add procesadatos.R</code></pre>
+	  </section>
+	  <section><h1>Visualizando los datos</h1>
+	    <h2 class='fragment'>Ventana <em>Environment</em></h2>
+	    <pre class='fragment'><code>plot(rownames(data.2016),data.2016$V1)</code>
+	    </pre>
+	  </section>
+
+	  <section><h1>Ejercicio</h1>
+	    <h2>Tomar el conjunto de datos y crear un fichero para cargarlo y visualizarlo.</h2>
+	    <aside class='notes'>Cumpliendo las provisiones del cuaderno de bitácora abierto y usando GitHub para organizarse. Se pueden hacer los scripts en colaboración o bien organizar el trabajo para diferentes visualizaciones o proceso (si ya se conoce R un poco).</aside>
+	  </section>
+	  
 	</section>
       </div>
     </div>
