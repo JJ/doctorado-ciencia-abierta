@@ -7,3 +7,8 @@ print(mean(data.2017$V1))
 print(mean(data.2016$V1))
 print(mean(data$visitas.2017))
 print(mean(data$visitas.2016))
+
+data.test <- wilcox.test(data$visitas.2017,data$visitas.2016)
+if (data.test$p.value < 0.05) {
+    print("Medias diferentes")
+}

@@ -125,12 +125,9 @@
 	  </section>
 
 	  <section><h1>Ejercicio</h1>
-	    <ol><li>Preparar los proyectos para pull requests con los
-		cambios anteriores</li>
-	      <li>Observar los proyectos del resto del grupo y hacer un
-		pull request sobre los mismos</li>
-	      <li>Interaccionad con el peticionario hasta aceptar el
-		pull request</li>
+	    <ol><li>Preparar los proyectos para pull requests</li>
+	      <li>Hacer un <em>pull request</em> a otro proyecto.</li>
+	      <li>Revisar el <em>pull request</em> hecho</li>
 	    </ol>
 	  </section>
 	</section>
@@ -185,6 +182,7 @@ data.2017 <- read.table("data/Cataluña-2017.dat")
 
 	  <section><h1>Conexión con Altmetrics</h1>
 	    <h2>Evaluación del trabajo más allá de las citas</h2>
+	    <h3>Lecturas, descargas...</h3>
 	  </section>
 
 	  <section><h1>Publicación de los datos de visitas</h1>
@@ -215,7 +213,20 @@ print(mean(data$visitas.2017))</code></pre>
 	    <aside class='notes'>$ se usa para seleccionar columnas de un data frame. En el primer caso también se trataba de un data frame y la variable V1 se le asignaba automáticamente. <code>print</code> imprime, y hay toda una cantidad de tests estadísticos que se pueden hacer.</aside>
 
 	    <pre class='notes'>wilcox.test(data.2016$V1,data.2017$V1)</pre></section>
+	  <section><h1>Más estadística</h1>
+	    <pre><code>data.test <- wilcox.test(data$visitas.2017,data$visitas.2016)
+if (data.test$p.value < 0.05) {
+    print("Medias diferentes")
+} </pre></code>
+
+			<aside class='notes'>R puede hacer automáticamente una serie de tests estadísticos. El resultado de los mismos es también una variable (una lista en este caso), que contiene en sus diferentes apartados los resultados del test.  </aside>
 	  </section>
+	  <section><h1>Ejercicio</h1>
+	    <h2>Hacer diferentes tests estadísticos sobre los datos que se han elegido, incluyéndolos en el código</h2>
+
+	    <aside class='notes'>Si no se está familiarizado con la estadística, se pueden hacer simplemente máximos y mínimos.</aside>
+	  </section>
+	</section>
       </div>
     </div>
 
