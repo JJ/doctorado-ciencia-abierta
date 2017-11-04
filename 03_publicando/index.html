@@ -196,9 +196,21 @@ data.2017 <- read.table("data/Cataluña-2017.dat")
 	<section>
 	  <section><h1>Usando <em>data frames</em></h1>
 	    <h2>Datos organizados el filas y columnas</h2>
+	    <pre><code>data <- data.frame(visitas.2016=data.2016$V1,
+			       visitas.2017=data.2017$V1,
+			       ratio=data.2017/data.2016) </code></pre>
+
+			       <aside class='notes'>Si se ejecuta en RStudio, la variable se puede visualizar directamente en el panel de Environment</aside>
 	  </section>
-	  
-	</section>
+
+	  <section><h1>Algo de estadística</h1>
+	    <pre><code>print(mean(data.2016$V1))
+print(mean(data$visitas.2017))</code></pre>
+
+	    <aside class='notes'>$ se usa para seleccionar columnas de un data frame. En el primer caso también se trataba de un data frame y la variable V1 se le asignaba automáticamente. <code>print</code> imprime, y hay toda una cantidad de tests estadísticos que se pueden hacer.</aside>
+
+	    <pre class='notes'>wilcox.test(data.2016$V1,data.2017$V1)</pre></section>
+	  </section>
       </div>
     </div>
 
