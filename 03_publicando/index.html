@@ -327,8 +327,60 @@ if (data.test$p.value < 0.05) {
 	    </section>
 
 	    <section><h1>La <em>estética de los gráficos</em></h1>
-	      <h2>Los gráficos incluyes <code>aes</code>thetics →
+	      <h2>Los gráficos incluyen <code>aes</code>thetics →
 		elementos del gráfico</h2>
+	    </section>
+
+	    <section><h1>Instalar la biblioteca</h1>
+	      <pre><code>package.install("ggplot2")</code></pre>
+
+	      <h2 class='fragment'>Usar la biblioteca</h2>
+	      <pre><code># Al principio del script
+library(ggplot2)</code></pre>
+
+	    </section>
+
+	    <section><h1>Gráfico de visitas por año</h1>
+	      <h2>Añadimos columna con fechas</h2>
+	      <pre><code>dias.sept <- paste0(1:30,c("/09"))
+dias.oct <- paste0(1:31,c("/10"))
+data$dias <- as.Date(c(dias.sept, dias.oct, "01/11"),format="%d/%m")</code></pre>	      
+	      <aside class='notes'>Es esencial que estén en un formato
+		fecha para que se ordene correctamente</aside>
+	    </section>
+
+	    <section><h1>Y creamos el gráfico</h1>
+	      <pre><code>grafico <- ggplot()+ geom_line(data=data,aes(x=dias,y=visitas.2015,color="2015",group=1))
+grafico <- grafico + geom_line(data=data,aes(x=dias,y=visitas.2016,color="2016",group=1)) + geom_line(data=data,aes(x=dias,y=visitas.2017,color="2017",group=1))
+grafico <- grafico + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+grafico</code></pre>
+	      <aside class='notes'>Trabajar con una variable nos
+	      permite ser más flexibles y también legibles. Esa
+		variable la podemos pasar por una función, por ejemplo</aside>
+	    </section>
+
+	    <section><h1>Bonito resultado</h1>
+	      <pre><code>ggsave("visitas-wikipedia-CAT.png")</code></pre>
+	      <h2>Y reproducible</h2>
+	      <aside class='notes'>El aspecto de los gráficos de
+	      ggplot es infinitamente mejor que el de los gráficos de
+	      Excel y universalmente mejor que los nefastos gráficos
+	      capturados de una pantalla de Excel (que tanto me he
+		encontrado por ahí).</aside>
+	    </section>
+	    <section data-background='../img/visitas-wikipedia-CAT.png'
+		   alt='Visitas wikipedia'>
+	    </sectio>
+
+	    <section><h1>Ejercicio</h1>
+	      <h2>Generar uno o varios gráficos para el conjunto de
+		datos usado</h2>
+	      <aside class='notes'>Como se ha venido haciendo hasta
+	      ahora, usar las prácticas de asignar tareas, guardar
+	      todo en el fichero de control de fuentes, y
+	      eventualmente subir el gráfico a FigShare o dejarlo
+		dentro del proyecto de OSF si ya está
+		conectado</aside>
 	    </section>
 	  </section>
 
