@@ -24,4 +24,9 @@ if (data.test.2$p.value < 0.05) {
 dias.sept <- paste0(1:30,c("/09"))
 dias.oct <- paste0(1:31,c("/10"))
 
-data$dias <- c(dias.sept, dias.oct, "01/11")
+data$dias <- as.Date(c(dias.sept, dias.oct, "01/11"),format="%d/%m")
+
+grafico <- ggplot()+ geom_line(data=data,aes(x=dias,y=visitas.2015,color="2015",group=1))
+grafico <- grafico + geom_line(data=data,aes(x=dias,y=visitas.2016,color="2016",group=1)) + geom_line(data=data,aes(x=dias,y=visitas.2017,color="2017",group=1))
+grafico <- grafico + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+grafico
