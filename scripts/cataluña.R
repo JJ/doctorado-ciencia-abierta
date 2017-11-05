@@ -1,9 +1,11 @@
 # Lee datos extraídos de la Wikipedia española
+library(ggplot2)
+
 data.2015 <- read.table("data/Cataluña-2015.dat")
 data.2016 <- read.table("data/Cataluña-2016.dat")
 data.2017 <- read.table("data/Cataluña-2017.dat")
 
-data <- data.frame(visitas.2016=data.2016$V1, visitas.2017=data.2017$V1, visitas.2015=data.2015$V1,
+data <- data.frame(visitas.2015=data.2015$V1, visitas.2016=data.2016$V1, visitas.2017=data.2017$V1, 
                    ratio1=data.2017$V1/data.2016$V1, ratio2=data.2016$V1/data.2015$V1 )
 
 print(mean(data$visitas.2017))
@@ -19,3 +21,7 @@ data.test.2 <- wilcox.test(data$visitas.2015,data$visitas.2016)
 if (data.test.2$p.value < 0.05) {
     print("Medias diferentes")
 }
+dias.sept <- paste0(1:30,c("/09"))
+dias.oct <- paste0(1:31,c("/10"))
+
+data$dias <- c(dias.sept, dias.oct, "01/11")
