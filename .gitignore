@@ -14,3 +14,7 @@ js/reveal.min.js
 
 *~
 .Rproj.user
+
+# Ficheros generados
+report/*.html
+report/*.pdf

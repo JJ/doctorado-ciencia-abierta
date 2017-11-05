@@ -1,0 +1,34 @@
+---
+title: "Visitas a la página de Cataluña en la Wikipedia"
+author: "JJ Merelo"
+date: "5 de noviembre de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Lee datos extraídos de la Wikipedia española
+library(ggplot2)
+
+data.2015 <- read.table("../data/Cataluña-2015.dat")
+data.2016 <- read.table("../data/Cataluña-2016.dat")
+data.2017 <- read.table("../data/Cataluña-2017.dat")
+
+data <- data.frame(visitas.2015=data.2015$V1, visitas.2016=data.2016$V1, visitas.2017=data.2017$V1, 
+                   ratio1=data.2017$V1/data.2016$V1, ratio2=data.2016$V1/data.2015$V1 )
+dias.sept <- paste0(1:30,c("/09"))
+dias.oct <- paste0(1:31,c("/10"))
+data$dias <- as.Date(c(dias.sept, dias.oct, "01/11"),format="%d/%m")
+```
+
+## Introducción
+
+Los acontecimientos en el mundo real tienen siempre reflejo en la Wikipedia; es una fuente a la que la gente acude para informarse en más profundidad y obtener contexto de una serie de hechos. Y la Wikipedia, además, ofrece un interfaz de aplicación que permite descargar las visitas y todas las actividades sobre una página fácilmente, en un formato, JSON, que se puede procesar para obtener una serie de datos.
+
+Los acontecimientos de Cataluña en estos últimos meses han alcanzado notoriedad mundial. En este trabajo trataremos de analizar qué acontecimientos han tenido más impacto en la gente observando la actividad que ha tenido la página en la wikipedia.
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+

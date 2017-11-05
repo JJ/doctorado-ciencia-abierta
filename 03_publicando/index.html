@@ -382,7 +382,50 @@ grafico</code></pre>
 		dentro del proyecto de OSF si ya está
 		conectado</aside>
 	    </section>
-	  </section>
+	    </section>
+
+	    <!-- Ahora vamos al RMarkdown -->
+	    <section>
+	      <section><h1>RMarkdown integra R y Markdown</h1>
+		<h2><em>Programación literaria</em></h2>
+		<h3>Integra el contenido con el procesamiento
+		  necesario para generar imágenes.</h3>
+	      </section>
+
+	      <section><h1>Abrimos un proyecto RMarkdown</h1>
+		<h2>(Cargando antes el proyecto en RStudio)</h2>
+		<img src='img/rmarkdown.png' alt='creando documento
+		     RMarkdown'>
+	      </section>
+	      <section><h1>Plantilla inicial</h1>
+		<pre><code>---
+title: "Visitas a la página de Cataluña en la Wikipedia"
+author: "JJ Merelo"
+date: "5 de noviembre de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown</code></pre>
+		<aside class='notes'>Se genera automáticamente con un
+		  contenido que nosotros podemos modificar. Las línes
+		iniciales son metadatos, rellenados en parte con
+		nuestra contestación al pop up. Debajo de las segundas
+		  --- comienza el texto, con código R entre ```
+		</aside>
+	      </section>
+
+	      <section><h1>Guardar con extensión
+		<code>.Rmd</code></h1>
+		<h2><em>Knit</em> genera el fichero con el formato que
+		  se desee</h2>
+	      </section>
+
+	      
+	    </section>
 
       </div>
     </div>
