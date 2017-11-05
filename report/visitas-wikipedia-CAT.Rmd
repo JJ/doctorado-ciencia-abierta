@@ -26,9 +26,13 @@ Los acontecimientos en el mundo real tienen siempre reflejo en la Wikipedia; es 
 
 Los acontecimientos de Cataluña en estos últimos meses han alcanzado notoriedad mundial. En este trabajo trataremos de analizar qué acontecimientos han tenido más impacto en la gente observando la actividad que ha tenido la página en la wikipedia.
 
+## Analisis año a año
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+grafico <- ggplot()+ geom_line(data=data,aes(x=dias,y=visitas.2015,color="2015",group=1))
+grafico <- grafico + geom_line(data=data,aes(x=dias,y=visitas.2016,color="2016",group=1)) + geom_line(data=data,aes(x=dias,y=visitas.2017,color="2017",group=1))
+grafico <- grafico + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+grafico
 ```
 
 

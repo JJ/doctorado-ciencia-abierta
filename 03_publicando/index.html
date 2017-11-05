@@ -368,9 +368,10 @@ grafico</code></pre>
 	      capturados de una pantalla de Excel (que tanto me he
 		encontrado por ahí).</aside>
 	    </section>
+	    
 	    <section data-background='../img/visitas-wikipedia-CAT.png'
 		   alt='Visitas wikipedia'>
-	    </sectio>
+	    </section>
 
 	    <section><h1>Ejercicio</h1>
 	      <h2>Generar uno o varios gráficos para el conjunto de
@@ -394,7 +395,7 @@ grafico</code></pre>
 
 	      <section><h1>Abrimos un proyecto RMarkdown</h1>
 		<h2>(Cargando antes el proyecto en RStudio)</h2>
-		<img src='img/rmarkdown.png' alt='creando documento
+		<img src='../img/rmarkdown.png' alt='creando documento
 		     RMarkdown'>
 	      </section>
 	      <section><h1>Plantilla inicial</h1>
@@ -424,9 +425,83 @@ knitr::opts_chunk$set(echo = TRUE)
 		  se desee</h2>
 	      </section>
 
-	      
+	      <section><h1>Carga de ficheros y procesamiento
+		inicial</h1>
+		<pre><code>```{r setup, include=FALSE}
+library(ggplot2)
+data.2015 <- read.table("../data/Cataluña-2015.dat") # ...
+
+dias.sept <- paste0(1:30,c("/09"))
+dias.oct <- paste0(1:31,c("/10"))
+data$dias <- as.Date(c(dias.sept, dias.oct, "01/11"),format="%d/%m")
+```</code></pre>
+		<aside class='notes'>Es la parte inicial del script,
+		  entre tres comillas. Tras las llaves, se pone
+		  <code>r</code> y se le asigna un nombre al
+		  <em>chunk</em>. El resto son órdenes específicas del
+		  chunk que especifican cosas como si se deben incluir
+		  los warnings o no, si se presenta en el trabajo la
+		  orden en sí o en este caso <a
+		    href='http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html'><code>include=false</code></a>
+		  para que no se presenten ni el código ni el
+		  resultado</aside>
+	      </section>
+
+	      <section><h1>Ejecutar código de prueba en la
+		consola</h1>
+		<h2>Usando "Run" o la flechita el la esquina del
+		  chunk</h2>
+		<aside class='notes'>Permite probar poco a poco lo que
+		se va haciendo, incluso probar cosas en la consola
+		  antes de escribirlas.</aside>
+	      </section>
+
+	      <section><h1>Ejercicio</h1>
+		<h2>Integrar el script de procesamiento de datos en un
+		fichero RMarkdown y escribir una pequeña introducción
+		  al mismo.</h2>
+	      </section>
+
+	      <section><h1>Una imagen vale mil palabras</h1>
+		<pre><code>```{r grafico, echo=FALSE}
+grafico <- ggplot()+ geom_line(data=data,aes(x=dias,y=visitas.2015,color="2015",group=1))
+grafico <- grafico + geom_line(data=data,aes(x=dias,y=visitas.2016,color="2016",group=1)) + geom_line(data=data,aes(x=dias,y=visitas.2017,color="2017",group=1))
+grafico <- grafico + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+grafico
+```</code></pre>
+	      <aside class='notes'>echo=FALSE hace que no aparezca la
+		orden en pantalla, pero sí el resultado. El poner
+		"grafico", el nombre de la variable, al final del
+		chunk es el que hace que aparezca</aside>
 	    </section>
 
+	    <section><h1>Buenas prácticas</h1>
+
+	      <h2>Estructurar  texto + gráficos + órdenes</h2>
+	      <img src='../img/texto.png' alt='organización del texto'>
+
+	    </section>
+
+	    <section><h1>Ejercicio</h1>
+	      <h2>Escribir un borrador que incluya gráficos y
+		explicación de los mismos</h2>
+	    </section>
+
+	    <section><h1>Publicación en RPubs</h1>
+	      <img src='../img/rpubs.png' alt='organización del texto'>
+	      <h2>Registro previo en <a
+		href='https://rpubs.com'><code>rpubs.com</code></a></h2>
+	    </section>
+
+	    <section><h1>Uso para borradores e informes breves</h1>
+	      <h2>Sin DOI, sin Google Scholar...</h2>
+	    </section>
+
+	    <section><h1>Ejercicios</h1>
+	      <h2>Publicar en RPubs un informe breve con análisis de
+		datos + gráficos</h2>
+	    </section>
+	    </section>
       </div>
     </div>
 
