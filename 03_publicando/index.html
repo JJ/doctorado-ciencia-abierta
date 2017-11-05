@@ -212,21 +212,71 @@ print(mean(data$visitas.2017))</code></pre>
 
 	    <aside class='notes'>$ se usa para seleccionar columnas de un data frame. En el primer caso también se trataba de un data frame y la variable V1 se le asignaba automáticamente. <code>print</code> imprime, y hay toda una cantidad de tests estadísticos que se pueden hacer.</aside>
 
-	    <pre class='notes'>wilcox.test(data.2016$V1,data.2017$V1)</pre></section>
+	    <pre
+	    class='fragment'><code>wilcox.test(data.2016$V1,data.2017$V1)</pre></code>
+
+	    <aside class='notes'>El test de Wilcoxon asegura si dos
+	    variables estadísticas son iguales o no. El coeficiente p
+	      debe ser menor que 0.05 para que sea así. </aside>
+
+	  </section>
+	  
 	  <section><h1>Más estadística</h1>
 	    <pre><code>data.test <- wilcox.test(data$visitas.2017,data$visitas.2016)
 if (data.test$p.value < 0.05) {
     print("Medias diferentes")
 } </pre></code>
-
-			<aside class='notes'>R puede hacer automáticamente una serie de tests estadísticos. El resultado de los mismos es también una variable (una lista en este caso), que contiene en sus diferentes apartados los resultados del test.  </aside>
+	    
+	    <aside class='notes'>R puede hacer automáticamente una
+	      serie de nilTODO: ests estadísticos. El resultado de los mismos es
+	      también una variable (una lista en este caso), que contiene
+	      en sus diferentes apartados los resultados del test.   </aside>
 	  </section>
+	  
 	  <section><h1>Ejercicio</h1>
 	    <h2>Hacer diferentes tests estadísticos sobre los datos que se han elegido, incluyéndolos en el código</h2>
-
-	    <aside class='notes'>Si no se está familiarizado con la estadística, se pueden hacer simplemente máximos y mínimos.</aside>
+	    
+	    <aside class='notes'>Si no se está familiarizado con la
+	      estadística, se pueden hacer simplemente máximos y
+	      mínimos. Todos los tests estadísticos deben estar bajo
+	      control de fuentes, y en general es conveniente que estén
+	      todos uno detrás de otro en el script</aside>
 	  </section>
-	</section>
+	  </section>
+	  
+	  <!-- Open Science Framework -->
+	  <section>
+	    <section><h1>Open Science Framework</h1>
+	      <h1><a
+		href='https://osf.io'><code>osf.io</code></a></h1>
+	      <h2>Alta con cuenta de ORCID</h2>
+	    </section>
+
+	    <section><h1>Ejercicio</h1>
+	      <h2>Alta en OSF, si es necesario dándose se alta
+		previamente en ORCID</h2>
+	    </section>
+
+	    <section><h1>Almacenando datos</h1>
+	      <h2>OSF tiene almacenamiento propio y permite almacenar
+		ficheros muy grandes</h2>
+	      <h2 class='fragment'>También conectar otros sitios, como
+		GitHub</h2>
+	    </section>
+
+	    <section><h1>Gestionando proyectos con OSF</h1>
+	      <h2>Los proyectos tienen Wiki y se pueden añadir
+		diferentes personas</h2>
+	    </section>
+
+	    <section><h1>Ejercicio</h1>
+	      <h2>Crear un proyecto para cada grupo, añadiendo a los
+		miembros, y conectarlo a la cuenta de GitHub</h2>
+	    </section>
+
+	  </section>
+	  
+
       </div>
     </div>
 
